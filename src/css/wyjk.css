@@ -1,0 +1,108 @@
+/*wyjk_page部分：start*/
+.wyjk_page {
+}
+
+.wyjk_page .wyjk_page_top {
+    height: 242px;
+    background: url(../../imgs/bor_banner.jpg) no-repeat center;
+}
+
+.wyjk_page .wyjk_page_main {
+    margin-bottom: 20px;
+}
+
+.wyjk_page .wyjk_page_main li dl {
+    height: 230px;
+    color: #fff;
+    padding: 0 25px;
+    background: #fd5353 url("../../imgs/bor_ico1.png") no-repeat 270px 70px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li01 dl {
+
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li02 dl {
+    background: #fdb64a url("../../imgs/bor_ico3.png") no-repeat 340px 90px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li03 dl {
+    background: #62c6ad url("../../imgs/bor_ico5.png") no-repeat 345px 45px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li04 dl {
+    background: #39a1ea url("../../imgs/bor_ico2.png") no-repeat 310px 65px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li05 dl {
+    background: #21b7c6 url("../../imgs/bor_ico4.png") no-repeat 290px 90px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li06 dl {
+    background: #62c6ad url("../../imgs/bor_ico5.png") no-repeat 345px 45px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_li_b {
+    height: 90px;
+    line-height: 90px;
+    font-size: 14px;
+    padding: 0 15px;
+    background: #eee;
+}
+
+.wyjk_page_main_li_b > p {
+    float: left;
+}
+
+.wyjk_page_main_li_b > .out_btn {
+    float: right;
+    width: 120px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    color: #fff;
+    margin: 28px 0;
+    background: #f19c58;
+    border-radius: 5px;
+}
+
+.wyjk_page .wyjk_page_main li {
+    width: 480px;
+    height: 320px;
+    margin: 20px 35px 0 35px;
+}
+
+.wyjk_page .wyjk_page_main li dl dt {
+    height: 35px;
+    line-height: 25px;
+    font-size: 24px;
+    padding-top: 22px;
+}
+
+.wyjk_page .wyjk_page_main li dl dd {
+    width: 250px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.wyjk_page .wyjk_page_main li dl dd:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: 13px;
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_l {
+}
+
+.wyjk_page .wyjk_page_main .wyjk_page_main_r {
+}
+
+/*wyjk_page部分：end*/

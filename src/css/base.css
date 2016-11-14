@@ -1,0 +1,289 @@
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h3,
+img {
+    margin: 0;
+    padding: 0;
+}
+em {
+    font-style: normal;
+}
+dl dt dd {
+    text-indent: 0;
+}
+img {
+    border: 0 none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+ul li,
+ol li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration:none;
+    /*appearance: none;*/
+    outline: none;
+}
+input {
+    resize: none;
+    outline: none;
+    appearance:none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table th {
+  font-weight: normal;
+  font-size: 1em;
+}
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #515151;
+}
+.clearfix:before,.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.font12{
+    font-size: 12px;
+}
+.font20{
+    font-size: 20px;
+}
+.bd {
+    border: 1px solid #cfcfcf;
+}
+/*字体*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../../lib/font/fontello.eot-9444024');
+  src: url('../../lib/font/fontello.eot-9444024#iefix') format('embedded-opentype'),
+       url('../../lib/font/fontello.woff-9444024') format('woff'),
+       url('../../lib/font/fontello.ttf-9444024') format('truetype'),
+       url('../../lib/font/fontello.svg-9444024#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fontello { font-family: 'fontello'; }
+
+
+/*公用的结构*/
+/*分页结构*/
+.devide_page {/*
+    padding: 40px 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;*/
+}
+/*site_nav部分：start*/
+.site_nav {
+    height: 40px;
+    line-height: 40px;
+    background-color: #f2f2f2;
+}
+.site_nav .container {
+    height: 40px;
+}
+.site_nav .site_nav_l li {
+    float: left;
+    color: #a6a6a6;
+}
+.site_nav .site_nav_l li a {
+    color: #a6a6a6;
+}
+.site_nav .site_nav_l li.phone_icon span {
+    vertical-align: middle;
+    font-size: 20px;
+    color: #f19c58;
+} 
+.site_nav_l_phone {
+    margin: 0 30px 0 15px;
+}
+.site_nav .site_nav_r li {
+    float: left;
+    
+}
+.site_nav_r_btn {
+    display: inline-block;
+    line-height: 1.5;
+    padding: 5px 9px;
+    margin: 0 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+.site_nav_r_btn.btn1 {
+    background-color: #f19c58;
+}
+.site_nav_r_btn.btn2 {
+    background-color: #76cbf2;
+}
+.site_nav_r_btn.link {
+    color: #515151;
+}
+/*site_nav部分：end*/
+
+/*header部分：start*/
+.header {
+    height: 90px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    box-shadow: 0px 1px 2px #cfcfcf;
+}
+.header .container {
+    overflow: hidden;
+}
+.header .header_l .site_logo a {
+    display: block;
+    height: 54px;
+    padding: 18px 0;
+}
+.header .header_r ul li {
+    float: left;
+}
+.header .header_r ul li a {
+    display: block;
+    width: 110px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 17px;
+}
+.header .header_r ul li a.current {
+    color: #f19c58;
+}
+/*header部分：end*/
+/*footer部分：start*/
+.footer {
+    background: #f2f2f2;
+    padding-top: 25px;
+}
+.footer .footer_top{}
+.footer .footer_top .footer_top_l {}
+.footer .footer_top .footer_top_l li {
+    margin-bottom: 25px;
+    color: #515151;
+}
+.footer .footer_top .footer_top_l li a {
+    color: #515151;
+    margin-right: 20px; 
+}
+.footer .footer_top .footer_top_l .fontAttr a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 30px;
+    background: #b3b3b3;
+    border-radius: 50%;
+}
+
+.footer .footer_top .footer_top_l .fontAttr a:hover {
+    background: #f19c58;
+}
+.footer .footer_top .footer_top_m {
+    margin-left: 190px;
+}
+.footer .footer_top .footer_top_m .weixin{}
+.footer .footer_top .footer_top_m .weixin h3{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    background: #f19c58;
+}
+.footer .footer_top .footer_top_m .weixin div img{
+    width: 100px;
+    height: 100px;
+}
+.footer .footer_top .footer_top_m .download{
+    margin-left: 20px;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.footer .footer_top .footer_top_m .download p {
+    height: 40px;
+    line-height: 40px;
+}
+.footer .footer_top .footer_top_m .download p .dl_btn {
+    vertical-align: middle;
+    color: #fff;
+    padding: 5px 12px;
+    margin-left: 5px;
+    background: #f07b05;
+    border-radius: 3px;
+}
+.footer .footer_top .footer_top_m .download p span {
+    vertical-align: middle;
+    font-size: 32px;
+}
+.footer .footer_top .footer_top_r {
+    color: #7f7f7f;
+}
+.footer .footer_top .footer_top_r div {
+    overflow: hidden;
+}
+.footer .footer_top .footer_top_r div p {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.footer .footer_top .footer_top_r div p.txt_left {
+    width: 75px;    
+}
+.footer .footer_top .footer_top_r div p span.big_num {
+    font-size: 24px;
+    color: #8d8d8d;    
+}
+.footer .footer_top .footer_top_r div p span.color_num {
+    color: #f19c58;
+}
+.footer .footer_bottom{
+    margin-top: 20px;
+    border-top: 1px solid #cfcfcf;
+    text-align: center;
+    line-height: 20px;
+    color: #757575;
+    padding: 20px 0;
+    font-size: 12px;
+}
+/*footer部分：end*/

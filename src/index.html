@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平平贷</title>
+    <link rel="short icon" href="http://www.pingpingdai.net/favicon.ico">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/wylc.css">
+    <link rel="stylesheet" href="./css/wyjk.css">
+    <link rel="stylesheet" href="./css/ppdt.css">
+    <link rel="stylesheet" href="./css/gypp.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/angular-ui-router.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/wylc.js"></script>
+    <script src="./js/wyjk.js"></script>
+    <script src="./js/ppdt.js"></script>
+    <script src="./js/gypp.js"></script>
+    <script src="./js/phone.js"></script>
+    <script src="./js/slide.js"></script>
+
+</head>
+<body ng-app="pp.app">
+<!-- site_nav部分：start -->
+<div id="top" class="site_nav">
+    <div class="container">
+        <div class="site_nav_l fl">
+            <ul>
+                <li class="phone_icon"><span class="fontello"></span>客服热线</li>
+                <li class="font20 site_nav_l_phone">400-8500-993</li>
+                <li class="font12"><a href="#">平平贷官网</a></li>
+            </ul>
+        </div>
+        <div class="site_nav_r fr">
+            <ul>
+                <li><a class="site_nav_r_btn btn1" href="./pp_login.html">登录</a></li>
+                <li><a class="site_nav_r_btn btn2" href="./pp_reg.html">注册</a></li>
+                <li><a class="site_nav_r_btn link" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- site_nav部分：end -->
+
+<!-- header部分：start -->
+<div class="header">
+    <div class="container">
+        <div class="header_l fl">
+            <div class="site_logo">
+                <a href="#"><img src="../imgs/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="header_r fr">
+            <ul>
+                <li><a ng-class="{current:aHrefClass=='index'}" ui-sref="index">首&nbsp;&nbsp;&nbsp;页</a></li>
+                <li><a ng-class="{current:aHrefClass=='wylc'}" ui-sref="wylc.wmContent1">我要理财</a></li>
+                <li><a ng-class="{current:aHrefClass=='wyjk'}" ui-sref="wyjk">我要借款</a></li>
+                <li><a href="./pp_login.html">我的账户</a></li>
+                <li><a ng-class="{current:aHrefClass=='ppdt'}" ui-sref="ppdt">平平动态</a></li>
+                <li><a ng-class="{current:aHrefClass=='gypp'}" ui-sref="gypp">关于平平</a></li>
+                <li><a ng-class="{current:aHrefClass=='phone'}" ui-sref="phone">手机客户端</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header部分：end -->
+<div ui-view></div>
+<!-- footer部分：start -->
+<div class="footer">
+    <div class="container">
+        <div class="footer_top clearfix">
+            <div class="footer_top_l fl">
+                <ul>
+                    <li>
+                        友情链接：&nbsp;&nbsp;&nbsp;<a href="#">网贷天眼</a><a href="#">网贷之家</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                        <a href="#">平平动态</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">资费标准</a>
+                    </li>
+                    <li>
+                        <a href="#">安全保障</a>
+                        <a href="#">招贤纳士</a>
+                        <a href="#">公司证照</a>
+                        <a href="#">资金保障</a>
+                    </li>
+                    <li class="fontAttr">
+                        客服服务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="fontello"></a>
+                        <a href="#" class="fontello"></a>
+                        <a href="#" class="fontello"></a>
+                        <a href="#" class="fontello"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_top_m fl">
+                <div class="weixin fl">
+                    <h3>微信公众号</h3>
+
+                    <div>
+                        <img src="../imgs/f_img4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="download fl">
+                    <p>手机端登录</p>
+
+                    <p><span class="fontello"></span> &nbsp;安卓版<a class="dl_btn" href="#">下载</a></p>
+
+                    <p><span class="fontello"></span> &nbsp;IOS版<a class="dl_btn" href="#">下载</a></p>
+                </div>
+            </div>
+            <div class="footer_top_r fr">
+                <div>
+                    <p class="txt_left">客服电话</p>
+
+                    <p class="txt_right"><span class="big_num">400-8500-993</span></p>
+                </div>
+                <div>
+                    <p class="txt_left"></p>
+
+                    <p class="txt_right">9:00 - 21:00</p>
+                </div>
+                <div>
+                    <p class="txt_left">官方qq群</p>
+
+                    <p class="txt_right"><span class="big_num color_num">306293372</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">Copyright©2011-2012 P2P网络借贷系统　备案号：浙ICP备13019864号</div>
+    </div>
+</div>
+<!-- footer部分：end -->
+
+<!-- fixBox部分:start -->
+<div class="fixBox">
+    <ul>
+        <li><a title="下载客户端" class="app" href="#"></a></li>
+        <li><a title="关注我们" class="weixin" href="#"></a></li>
+        <li><a title="联系客服" class="QQ" href="#"></a></li>
+        <li><a title="返回顶部" class="toTop" href="#top"></a></li>
+    </ul>
+</div>
+<!-- fixBox部分:end -->
+
+<script>
+    var app = angular.module('pp.app', ['ui.router', 'index', 'wylc', 'wyjk', 'ppdt', 'gypp', 'phone', 'pp.service']);
+    app.config(function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('/index');
+        $stateProvider
+                .state('index', {
+                    url: '/index',
+                    templateUrl: './ppd.html',
+                    controller: 'indexController'
+                })
+                .state('wylc', {
+                    url: '/wylc',
+                    templateUrl: './wylc.html',
+                    controller: 'wylcController'
+                })
+                .state('wyjk', {
+                    url: '/wyjk',
+                    templateUrl: './wyjk.html',
+                    controller: 'wyjkController'
+                })
+                .state('ppdt', {
+                    url: '/ppdt',
+                    templateUrl: './ppdt.html',
+                    controller: 'ppdtController'
+                })
+                .state('gypp', {
+                    url: '/gypp',
+                    templateUrl: './gypp.html',
+                    controller: 'gyppController'
+                })
+                .state('phone', {
+                    url: '/phone',
+                    templateUrl: './phone.html',
+                    controller: 'phoneController'
+                })
+                .state('wylc.wmContent1', {
+                    url: '/wmContent1',
+                    templateUrl: './subHtml/wmContent1.html'
+                })
+                .state('wylc.wmContent2', {
+                    url: '/wmContent2',
+                    templateUrl: './subHtml/wmContent2.html'
+                })
+                .state('wylc.wmContent3', {
+                    url: '/wmContent3',
+                    templateUrl: './subHtml/wmContent3.html'
+                })
+    });
+    app.run(function ($rootScope, MainService) {
+        var data = $rootScope.data = {};
+        var actions = $rootScope.actions = {};
+//        data.aHrefClass = MainService.aHrefClass;
+        $rootScope.aHrefClass = 'index';
+    });
+</script>
+</body>
+</html>

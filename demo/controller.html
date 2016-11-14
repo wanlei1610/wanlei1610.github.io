@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../src/js/angular.min.js"></script>
+    <script src="../src/js/angular-ui-router.js"></script>
+</head>
+<body ng-app="controllerDemo">
+    <a ui-sref="controllerDemoSub.son01">点点我</a>
+    <div ui-view>
+        
+    </div>
+    <input type="text" ng-model="msg">
+    <script src="./controller.js"></script>
+    <script>
+    angular.module("controllerDemo",['controllerDemo01','ui.router'])
+        .config(function($stateProvider, $urlRouterProvider){
+            $stateProvider
+                .state('controllerDemoSub',{
+                    url:'/controllerDemoSub/son01',
+                    templateUrl: './controllerDemoSub.html',
+                    controller: 'MainController'
+                })
+                .state('controllerDemoSub.son01',{
+                    url:'/controllerDemoSub/son01',
+                    templateUrl: './controllerDemoSubSon01.html',
+                    controller: 'MainController'
+                })
+                .state('controllerDemoSub.son02',{
+                    url:'/controllerDemoSub/son02',
+                    templateUrl: './controllerDemoSubSon02.html',
+                    controller: 'MainController'
+                })
+                .state('controllerDemoSub.son03',{
+                    url:'/controllerDemoSub/son03',
+                    templateUrl: './controllerDemoSubSon03.html',
+                    controller: 'MainController'
+                })
+        })
+        .run(function($rootScope){
+            $rootScope.msg = "hello world";
+        })
+    </script>
+</body>
+</html>

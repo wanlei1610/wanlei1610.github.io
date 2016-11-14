@@ -1,0 +1,151 @@
+<!--index_page部分：start-->
+<div class="index_page">
+    <!-- banner部分：start -->
+    <div id="out_box">
+        
+    </div>
+    <!-- banner部分：end -->
+
+    <!-- site_data部分：start -->
+    <div class="site_data clearfix">
+        <div class="container">
+            <div class="site_data_t" ng-repeat="sdt in data.sdt">
+                <dl>
+                    <dt><img src="{{sdt.url}}" alt=""></dt>
+                    <dd>
+                        <p class="site_data_t_num">{{sdt.p1}}</p>
+
+                        <p class="site_data_t_con">{{sdt.p2}}</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="site_data_b" ng-repeat="sdb in data.sdb">
+                <dl class="{{sdb.className}}">
+                    <dt></dt>
+                    <dd>
+                        <h3>{{sdb.tit}}</h3>
+                        <p>{{sdb.p1}}</p>
+                        <p>{{sdb.p2}}</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- site_data部分：end -->
+
+    <!-- index_main部分：start -->
+    <div class="index_main clearfix">
+        <div class="container">
+            <div class="index_main_l fl">
+                <div class="index_main_l_top">
+                    <dl>
+                        <dt>优质理财计划</dt>
+                        <dd>
+                            <ul>
+                                <li class="index_main_l_top_l1"><a href="#">测试理财标</a><span class="month">1月</span></li>
+                                <li class="index_main_l_top_l2">金额<span class="num">￥1,000</span></li>
+                                <li class="index_main_l_top_l3">预期年化收益<span class="num">8.50%</span></li>
+                                <li class="index_main_l_top_l4"><a href="#" class="btn">立即购买</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="index_main_l_mid">
+                    <h3>推荐标</h3>
+                    <ul>
+                        <li>借款标题</li>
+                        <li>年利率奖励</li>
+                        <li>金额</li>
+                        <li>期限</li>
+                        <li>投标状态</li>
+                    </ul>
+                </div>
+                <div class="index_main_l_bottom" ng-repeat="mlb in data.mlb">
+                    <dl>
+                        <dt>{{mlb.dt}}</dt>
+                        <dd>
+                            <div class="user_info clearfix">
+                                <div class="user_name fl"><a href="#">{{mlb.userName}}</a></div>
+                                <div class="user_status fr">
+                                    <div class="progress">
+                                        <div class="progress_bar"></div>
+                                        <span>{{mlb.progress}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="index_main_l_bottom_l1"><span class="money">{{mlb.money}}</span></li>
+                                <li class="index_main_l_bottom_l2"><span class="blue_num">{{mlb.num1}}</span> <span
+                                        class="orange_num">{{mlb.num2}}</span></li>
+                                <li class="index_main_l_bottom_l3"><span class="big_num">{{mlb.time}}</span>个月</li>
+                                <li class="index_main_l_bottom_l4"><a class="{{mlb.btnClass}}" href="#">{{mlb.num3}}</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="index_main_r fr">
+                <div class="index_main_r_01"><img src="../imgs/enter.jpg" alt=""></div>
+                <div class="index_main_r_02">
+                    <div class="index_main_r_top clearfix">
+                        <h3>发标预告</h3>
+                        <a href="#">更多>></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">2016年9月24日发标公告</a><span>2016-09-23</span></li>
+                        <li><a href="#">2016年9月23日发标公告</a><span>2016-09-22</span></li>
+                        <li><a href="#">2016年9月22日发标公告</a><span>2016-09-21</span></li>
+                        <li><a href="#">2016年9月21日发标公告</a><span>2016-09-20</span></li>
+                    </ul>
+                </div>
+                <div class="index_main_r_03">
+                    <div class="index_main_r_top clearfix">
+                        <h3>了解平平贷</h3>
+                        <a href="#">更多>></a>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="index_main_r_04">
+                    <div class="index_main_r_top clearfix">
+                        <h3>发标预告</h3>
+                        <a href="#">更多>></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">2016年9月23日提前还款公告</a><span>2016-09-22</span></li>
+                        <li><a href="#">2016年中秋节放假公告</a><span>2016-09-14</span></li>
+                        <li><a href="#">2016年9月14日提前还款公告</a><span>2016-09-13</span></li>
+                        <li><a href="#">2016年9月9日提前还款公告</a><span>2016-09-08</span></li>
+                    </ul>
+                </div>
+                <div class="index_main_r_05">
+                    <div class="index_main_r_top clearfix">
+                        <h3>平台动态</h3>
+                        <a href="#">更多>></a>
+                    </div>
+                    <dl>
+                        <dt>
+                            <img src="../imgs/1.png" alt="">
+                        </dt>
+                        <dd>
+                            <h3><a href="#">平平关于近期不实言论的严正声明</a></h3>
+
+                            <p>尊敬的客户： 近日，我公司查明在某</p>
+                        </dd>
+                    </dl>
+                    <dl class="last_dl">
+                        <dt>
+                            <img src="../imgs/1.png" alt="">
+                        </dt>
+                        <dd>
+                            <h3><a href="#">平平与天谷信息全面战略合作</a></h3>
+
+                            <p>应P2P监管细则倡导，2016年3月15号，平平投资咨询（宁波）有 </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index_main部分：end -->
+</div>
+<!--index_page部分：end-->

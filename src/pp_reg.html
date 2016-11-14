@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>平平贷</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/pp_reg.css"/>
+</head>
+<body>
+<div class="reg_page">
+    <div class="reg_page_top">
+        <div class="reg_page_top_content">
+            <img src="../imgs/logo.png" alt=""/>
+        </div>
+    </div>
+    <div class="reg_page_mid">
+        <div class="container">
+            <form class="reg_form" id="reg_form" action=""> 
+                <dl class="clearfix">      
+                    <div id="reg_tip"></div>      
+                    <dd>
+                        <em>Email</em>
+                        <input type="text" id="reg_email" name="email">
+                        <span class="checktip"><font>*</font>请填写您的邮箱地址</span>
+                    </dd>
+                    <dd>
+                        <em>用户名</em>
+                        <input type="text" id="reg_username" name="username">
+                        <span class="checktip"><font>*</font>请输入您网站的用户名</span>
+                    </dd>
+                    <dd>
+                        <em>密码</em>
+                        <input type="password" id="reg_password" name="password">
+                        <span class="checktip"><font>*</font>6~16个字符，区分大小写</span>
+                    </dd>
+                    <dd>
+                        <em>确认密码</em>
+                        <input type="password" id="reg_confirm_password" name="confirm_password">
+                        <span class="checktip"><font>*</font>请重复输入上面的密码</span>
+                    </dd>
+                    <dd>
+                        <em>推荐人</em>                       
+                        <input name="invite_username" type="text" id="reg_recommend">
+                        <span class="checktip">没有可不填</span>
+                    </dd>
+                    <dt>
+                        <input type="checkbox" checked="checked" name="agree" id="agree">
+                        <label for="agree">我已阅读并且平平贷的<a href="javascript:;">使用协议</a></label>
+                    </dt>
+                </dl>
+                <p><input type="button" class="btn" id="reg_btn" value="免费注册"></p>
+                <p><a href="./pp_login.html">立即登录</a></p>
+            </form>
+        </div>
+
+    </div>
+    <div class="reg_page_bot">
+        Copyright©2011-2012 P2P网络借贷系统
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/reg.js"></script>
+
+</body>
+</html>

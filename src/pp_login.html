@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>平平贷</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/pp_login.css"/>
+</head>
+<body>
+<div class="login_page">
+    <div class="login_page_top">
+        <div class="login_page_top_content">
+            <img src="../imgs/logo.png" alt=""/>
+        </div>
+    </div>
+    <div class="login_page_mid">
+        <div class="container">
+            <form id="form" action="">
+                <div id="tip"></div>
+                <div><label for=""><em>用户名</em> <input id="username" name="username" placeholder="请输入您的用户名" type="text"/></label></div>
+                <div><label for=""><em>密码</em> <input id="password" name="password"  placeholder="请输入您的登录密码" type="password"/></label></div>
+                <div>
+                    <label for="">
+                        <em>验证码</em>
+                        <input  id="verify" placeholder="验证码" type="text"/>
+                    </label>
+                    <img class="code" src="../imgs/imgcode.jpg" alt="点击刷新"/>
+                </div>
+                <div class="last_div">
+                    <label for=""><input id="submit" class="sub_btn" value="立即登录" type="button"/></label>
+
+                    <p><a href="javascript:;">忘记密码</a></p>
+
+                    <p><a class="reg" href="./pp_reg.html">马上注册</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="login_page_bot">
+        Copyright©2011-2012 P2P网络借贷系统
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/login.js"></script>
+
+</body>
+</html>

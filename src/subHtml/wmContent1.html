@@ -1,0 +1,48 @@
+
+<ul class="wylc_main_content1">
+    <li ng-repeat="wmc1 in wmc1">
+        <div class="wylc_content_top clearfix">
+            <div class="user_name fl"><a href="#">{{wmc1.userName}}</a></div>
+            <div class="user_status fr">
+                <div class="progress">
+                    <div class="progress_bar"></div>
+                    <span>{{wmc1.pro}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="wylc_content_bottom">
+            <ul class="clearfix">
+                <li class="index_main_l_bottom_l1"><span class="money">{{wmc1.money}}</span></li>
+                <li class="index_main_l_bottom_l2"><span class="blue_num">{{wmc1.num1}}</span> <span
+                        class="orange_num">{{wmc1.num2}}</span></li>
+                <li class="index_main_l_bottom_l3"><span class="big_num">{{wmc1.time}}</span>个月</li>
+                <li class="index_main_l_bottom_l4"><a class="{{wmc1.btnClass}}" href="#">{{wmc1.num3}}</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+<div class="wylc_main_bottom devide_page">
+    <b>共40条</b>
+    8条/页
+    <span class="page_line">|</span>
+    第{{data.thisPage}}/5页
+    <a href="javascript:;" ng-click='actions.tabThisPage("home")' ng-class="{disabled:data.thisPage===1}">
+        <font title="第一页">首页</font>
+    </a>
+    <a href="javascript:;" ng-click='actions.tabThisPage("prev")' ng-class="{disabled:data.thisPage===1}">
+        <font title="上一页">上一页</font>
+    </a>
+    <a href="javascript:;" ng-click='actions.tabThisPage(1)' ng-class="{this_page:data.thisPage===1}">1</a>
+    <a href="javascript:;" ng-click='actions.tabThisPage(2)' ng-class="{this_page:data.thisPage===2}">2</a>
+    <a href="javascript:;" ng-click='actions.tabThisPage(3)' ng-class="{this_page:data.thisPage===3}">3</a>
+    <a href="javascript:;" ng-click='actions.tabThisPage(4)' ng-class="{this_page:data.thisPage===4}">4</a>
+    <a href="javascript:;" ng-click='actions.tabThisPage(5)' ng-class="{this_page:data.thisPage===5}">5</a>
+    <a href="javascript:;" ng-click='actions.tabThisPage("next")' ng-class="{disabled:data.thisPage===5}">
+        <font title="下一页">下一页</font>
+    </a>
+    <a href="javascript:;" ng-click='actions.tabThisPage("end")' ng-class="{disabled:data.thisPage===5}">
+        <font title="最后一页">尾页</font>
+    </a>
+</div>
+
+

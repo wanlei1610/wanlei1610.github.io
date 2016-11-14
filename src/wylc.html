@@ -1,0 +1,24 @@
+<!-- wylc_main部分：start -->
+<div class="wylc_page">
+    <div class="wylc_main">
+        <div class="container">
+            <div class="wylc_main_top">
+                <ul class="clearfix bd">
+                    <li ng-repeat="wmt in data.wmt" ng-click='actions.tabClass(wmt.liClass)' class='{{wmt.liClass}}' ng-class="{current:data.wmtCurrentClass===wmt.liClass}">
+                        <a ui-sref="{{wmt.href}}">
+                            <h2>{{wmt.tit}}</h2>
+                            <p>{{wmt.content}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wylc_main_middle">
+                <ul>
+                    <li ui-view></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- wylc_main部分：end -->

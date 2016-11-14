@@ -1,0 +1,21 @@
+<!--index_page部分：start-->
+<div class="wyjk_page">
+    <div class="wyjk_page_top"></div>
+    <div class="wyjk_page_main clearfix">
+        <div class="container">
+            <ul ng-repeat="mainMsg in data.mainMsg"  class="{{mainMsg.ulClass}}">
+                <li class="{{msg.liClass}}" ng-repeat="msg in mainMsg.contentArr">
+                    <dl>
+                        <dt>{{msg.dt}}</dt>
+                        <dd ng-repeat="data in msg.dd">{{data}}</dd>
+                    </dl>
+                    <div class="wyjk_page_main_li_b">
+                        <p>{{msg.p}}</p>
+                        <a class="out_btn" href="#">{{msg.aHref}}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--index_page部分：end-->

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outBox">
+        
+    </div>
+    <script src="./slide.js"></script>
+    <script>
+      /*
+        params:{
+            outBox: IdName,
+            imgs: [],
+            aHref: "#",
+            imgSize: {width:'',height:''}
+            timeStep: 3000
+        }
+     */
+        var imgWidth = document.body.offsetWidth;
+        var slide = new MGS({
+            outBox: "outBox",
+            imgs: ['../imgs/banner01.jpg','../imgs/banner02.jpg','../imgs/banner03.jpg','../imgs/banner04.jpg','../imgs/banner05.jpg'],
+            aHref: "#",
+            imgSize: {width:imgWidth,height:400},
+            timeStep: 3000
+        });
+    </script>
+</body>
+</html>

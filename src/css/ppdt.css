@@ -1,0 +1,29 @@
+/*ppdt_page部分：start*/
+.ppdt_page_top{
+    height: 242px;
+    background: url(../../imgs/abo_banner.jpg) no-repeat center;
+}
+.ppdt_page_main{
+    padding-top: 80px;
+}
+.ppdt_page_main ul {
+    padding: 10px 40px;
+    border: 1px solid #cfcfcf;
+}
+.ppdt_page_main ul li {
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #ccc;
+    height: 35px;
+    line-height: 35px;
+    width: 1000px;
+    font-size: 13px;
+    color: #515151;
+}
+.ppdt_page_main ul li a {
+    font-size: 12px;
+}
+.ppdt_page_main ul li .time {
+    float: right;
+}
+/*ppdt_page部分：end*/

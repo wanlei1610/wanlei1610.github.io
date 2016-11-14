@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../src/js/angular.min.js"></script>
+    <script src="../src/js/angular-ui-router.js"></script>
+    <script src="./http01.js"></script>
+</head>
+<body ng-app="demo.app">
+    <a ui-sref="http001">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a>
+    <div ui-view></div>
+    <script>
+    angular.module('demo.app',['ui.router','http01'])
+    .run(function($rootScope){
+        console.log(1);
+    })
+    .config(function($stateProvider, $urlRouterProvider){
+        $stateProvider
+            .state('http001',{
+                url:'/http001',
+                templateUrl:"./http01.html",
+                controller: "http01Controller"
+            })
+    })
+    
+    </script>
+</body>
+</html>

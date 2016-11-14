@@ -1,0 +1,44 @@
+/*phone_page部分：start*/
+.phone_page {
+    border-bottom: 7px solid #f1f1f1;
+    padding-top: 70px;
+}
+.phone_page .container {
+    width: 975px;
+    height: 480px;
+    margin: 0 auto;
+    padding-left: 27px;
+}
+.phone_page .phone_page_left{
+    position: relative;
+}
+.phone_page .phone_page_left .mob_img{
+    position: absolute;
+    left: 228px;
+    top: 69px;
+}
+.phone_page .phone_page_right{
+    width: 505px;
+    height: 358px;
+    float: right;
+    padding-top: 14px;
+}
+.phone_page_right_txt1 {
+    height: 48px;
+    line-height: 48px;
+    font-size: 48px;
+    color: #0c3388;
+}
+.phone_page_right_txt2 {
+    height: 72px;
+    line-height: 72px;
+    color: #fda922;
+    font-size: 40px;
+}
+.phone_page_right_txt3 {
+    width: 468px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #46596a;
+}
+/*phone_page部分：end*/

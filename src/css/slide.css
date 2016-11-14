@@ -1,0 +1,67 @@
+{
+    margin: 0;
+    padding: 0;
+}
+ul li, ol li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+#out_box {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}  
+#out_box > ul {
+    position: absolute;
+}                   
+#out_box > ul > li > a {
+    display: block;
+}        
+#out_box > ul > li {
+    float: left;
+}
+#out_box > ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+#out_box > ol > li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#out_box > ol > li.current {
+    background-color: yellow;
+}
+#out_box > #arrow_box {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    height: 62px;
+    width: 100%;
+}
+#out_box > #arrow_box > a {
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 62px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font: 400 22px/62px "simsun";
+    text-align: center;
+}
+#out_box > #arrow_box > a.arrow_left {
+    left: 0;
+}
+#out_box > #arrow_box > a.arrow_right {
+    right: 0;
+} 

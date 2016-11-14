@@ -1,0 +1,25 @@
+/*gypp_page部分：start*/
+.gypp_page{}
+.gypp_page .gypp_page_top{}
+.gypp_page .gypp_page_main{
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+.gypp_page .gypp_page_main .gypp_page_main_content {
+    padding: 10px 40px;
+    border: 1px solid #cfcfcf;
+    font-size: 16px;
+    line-height: 2;
+}
+.gypp_page_main_content h2 {
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: bold;
+}
+.gypp_page_main_content h3 {
+    font-weight: bold;
+}
+.gypp_page_main_content p {
+    text-indent: 2em;
+}
+/*gypp_page部分：end*/
